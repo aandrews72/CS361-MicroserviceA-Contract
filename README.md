@@ -21,3 +21,8 @@ response = socket.recv_string()
 ```
 
 These are just examples of how the client, could send and receive data from microservice A. 
+
+
+## UML Diagram
+<img width="545" alt="Screenshot 2025-02-22 at 12 38 26 PM" src="https://github.com/user-attachments/assets/6a348c28-2c80-4f41-b31a-59b1d17facfb" />
+
