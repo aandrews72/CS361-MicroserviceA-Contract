@@ -54,7 +54,7 @@ def main():
         print("Listening for request")
         random_number = int(socket.recv().decode().strip())
 
-        if int(random_number) < 0 or int(random_number) > 39:
+        if random_number < 0 or random_number > 39:
             print("Invalid number")
             break
             
