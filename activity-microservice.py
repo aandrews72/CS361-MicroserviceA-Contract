@@ -56,14 +56,12 @@ def main():
 
         if random_number < 0 or random_number > 39:
             print("Invalid number")
-            break
-            
-        print(f"Received number, {random_number}, from client. Sleeping for 2 seconds.")
-        time.sleep(2)
-        
-        return_string = activities[random_number]
-        socket.send_string(return_string)
-        print(f"Sent string, {return_string}")
+            socket.send_string("Invalid number, must be between 0 and 39 inclusive")
+        else:
+            print(f"Received number, {random_number}, from client.")
+            return_string = activities[random_number]
+            socket.send_string(return_string)
+            print(f"Sent string, {return_string}")
     context.term()
 
 
